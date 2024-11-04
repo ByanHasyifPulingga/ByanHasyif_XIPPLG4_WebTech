@@ -5,7 +5,6 @@ function updateTimerDisplay() {
     let seconds = Math.floor(centiseconds / 100);
     let centiSecs = centiseconds % 100;
 
-    // Format as 3 digits for seconds and 2 digits for centiseconds
     let secondsFormatted = String(seconds).padStart(3, '0');
     let centisecondsFormatted = String(centiSecs).padStart(2, '0');
 
@@ -21,7 +20,7 @@ function startTimer() {
                 centiseconds = 999 * 100 + 59;
             }
             updateTimerDisplay();
-        }, 10); // 10 milliseconds = 1 centisecond
+        }, 10);
     }
 }
 
