@@ -9,7 +9,6 @@ function splitImage() {
       return;
   }
 
-  // Clear previous splits
   splitContainer.innerHTML = '';
 
   const imageWidth = sourceImage.naturalWidth;
@@ -17,7 +16,6 @@ function splitImage() {
   const pieceWidth = imageWidth / x;
   const pieceHeight = imageHeight / y;
 
-  // Set the container size to match the source image
   splitContainer.style.width = `${imageWidth}px`;
   splitContainer.style.height = `${imageHeight}px`;
   splitContainer.style.position = 'relative';
